@@ -1,0 +1,130 @@
+/* poppins-fonts-imported-here */
+@font-face {
+    font-family: poppins-300;
+    src: url('../fonts/Poppins-light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: poppins-400;
+    src: url('../fonts/PoppinsRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: poppins-500;
+    src: url('../fonts/PoppinsMedium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: poppins-600;
+    src: url('../fonts/PoppinsSemibold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: poppins-700;
+    src: url('../fonts/PoppinsBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Global-css-here */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-decoration: none;
+    list-style: none;
+    overflow-x: hidden;
+}
+
+:root {
+    /* Colors */
+    --white-color: #fff; /* white color */
+    --black-color: #000; /* black color */
+    --void-color: #020E28; /* void color */
+    --yellow-color: #E1AC0A; /* yellow color */
+    --azure-color: #007DFF; /* azure color */
+    --mermaid-blues-color: #004377; /* mermaid-blues color */
+    --gray-color: #e1e1e1; /* gray-color */
+    --container-width: 1170px;
+}
+
+/* few-reusable-css-code-here */
+
+section{
+    width: 100%;
+}
+
+.btn{
+    width: 182px;
+    height: 45px;
+    color: var(--white-color);
+    border: none;
+    font-size: 16px;
+    font-family: poppins-700;
+    text-transform: capitalize;
+    border-radius: 23px;
+    background-image: linear-gradient(107deg, #fdbd00 0%, #007dff 100%, #007dff 100%);
+}
+
+/* pre-header-css-start-here */
+.pre-header__wrapper{
+    background-color: var(--void-color);
+    height: 70px;
+}
+.pre-header__container{
+    width: var(--container-width);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    gap: 20px;
+
+}
+.pre-header__call, .pre-header__email{
+    display: flex;
+    align-items: center;
+}
+
+.pre-header__icon{
+    width: 16px;
+    height: 16px;
+    margin-right: 18px;
+}
+.pre-header__devider{
+    width: 1px;
+    height: 20px;
+    background-color: var(--gray-color);
+}
+
+.pre-header__number, .pre-header__email{
+    font-size: 16px;
+    letter-spacing: 0px;
+    color: var(--gray-color);
+    font-family: poppins-400;
+}
+
+/* main-header-HTML-here */
+
+.main-header__wrapper{
+    background-color: var(--azure-color);
+    height: 104px;
+}
+.main-header__container{
+    width: var(--container-width);
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 104px;
+    background-color: var(--yellow-color);
+}
