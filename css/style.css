@@ -81,12 +81,13 @@ section{
     color: var(--yellow-color);
 }
 
-/* pre-header-css-start-here */
-.pre-header__wrapper{
+/* Pre-header-css-here */
+.pre-header {
     background-color: var(--void-color);
     height: 70px;
 }
-.pre-header__container{
+
+.pre-header__container {
     width: var(--container-width);
     margin: auto;
     display: flex;
@@ -94,25 +95,27 @@ section{
     align-items: center;
     height: 70px;
     gap: 20px;
-
 }
-.pre-header__call, .pre-header__email{
+
+.pre-header__contact,
+.pre-header__email {
     display: flex;
     align-items: center;
 }
 
-.pre-header__icon{
+.pre-header__icon {
     width: 16px;
     height: 16px;
     margin-right: 18px;
 }
-.pre-header__devider{
+
+.pre-header__divider {
     width: 1px;
     height: 20px;
     background-color: var(--gray-color);
 }
 
-.pre-header__number, .pre-header__email{
+.pre-header__info {
     font-size: 16px;
     letter-spacing: 0px;
     color: var(--gray-color);
@@ -121,37 +124,34 @@ section{
 
 /* main-header-css-here */
 
-.main-header__wrapper{
+.main-header {
     background-color: var(--white-color);
     height: 104px;
-    overflow: hidden;
-    
-    
 }
-.main-header__container{
+
+.main-header__container {
     width: var(--container-width);
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 104px;
-
+    height: 100%;
 }
-.main-header_nav_btn__wrapper{
+
+.main-header__nav-btn-wrapper {
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
-.main-header__btn{
-    margin-left: 20px;
-}
-.main-header__nav{
+
+.main-header__nav {
     display: flex;
 }
-.main-header_nav__list{
+
+.main-header__nav-item {
     margin-right: 20px;
 }
-.main-header_nav_link{
+
+.main-header__nav-link {
     color: var(--void-color);
     font-size: 16px;
     font-family: poppins-700;
@@ -159,10 +159,12 @@ section{
     position: relative;
     transition: color 0.3s ease;
 }
-.main-header_nav_link:hover {
+
+.main-header__nav-link:hover {
     color: var(--yellow-color);
 }
-.main-header_nav_link::after {
+
+.main-header__nav-link::after {
     content: ''; 
     position: absolute;
     left: 0;
@@ -171,10 +173,27 @@ section{
     height: 2px; 
     background-color: var(--yellow-color); 
     transition: all 0.2s;
-    
 }
-.main-header_nav_link:hover::after{
+
+.main-header__nav-link:hover::after {
     width: 100%;
+}
+.main-header__nav-link.active {
+    color: var(--yellow-color);
+}
+.main-header__nav-link.active::after {
+    content: ''; 
+    position: absolute;
+    left: 0;
+    bottom: -1px; 
+    width: 100%;
+    height: 2px; 
+    background-color: var(--yellow-color); 
+}
+
+
+.main-header__btn {
+    margin-left: 20px;
 }
 
 /* banner-section-css-here */
