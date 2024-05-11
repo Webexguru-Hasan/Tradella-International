@@ -192,6 +192,9 @@ section{
     height: 2px; 
     background-color: var(--yellow-color); 
 }
+.toggle{
+    display: none;
+}
 .main-header__btn {
     margin-left: 20px;
 }
