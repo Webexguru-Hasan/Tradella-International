@@ -439,7 +439,7 @@ section{
     align-items: center;
 }
 
-.brands__left {
+.brands__left, .brands__right {
     width: 50%;
 }
 
@@ -486,10 +486,6 @@ section{
     margin-top: 10px;
 }
 
-.brands__right {
-    width: 50%;
-}
-
 /* pre-footer-css-here */
 
 .pre-footer__wrapper {
@@ -532,10 +528,6 @@ section{
     font-family: poppins-700;
     text-transform: uppercase;
     padding: 50px 0px 0px 40px;
-}
-
-.pre-footer__heading-yellow {
-    color: var(--yellow-color);
 }
 
 .pre-footer__paragraph {
@@ -658,6 +650,7 @@ section{
     font-family: poppins-400;
     margin-bottom: 16px;
 }
+
 .btn-link{
     color: var(--white-color);
 }
