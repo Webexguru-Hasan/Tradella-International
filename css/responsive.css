@@ -4,6 +4,15 @@
     section{
         width: 100%;
     }
+    .scroll-top-btn{
+      position: fixed;
+      bottom: -60px; /* Initial position */
+    right: 40px;
+    z-index: 1;
+    }
+    .scroll-top-btn.show {
+      bottom: 40px; /* Show button */
+  }
 
     /* pre-header-css-here */
     .pre-header{
